@@ -12,6 +12,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/', function () {
+    return redirect('/en');
+});
+
 Route::group(['prefix'=>'{locale}'], function() {
     Route::get('/', function () {
         return view('front.home');

@@ -6,10 +6,10 @@
             <img src="{{ asset('images/logo.png') }}" alt="Logo">
         </div>
         <div class = "menu-wrapper">
-            <a href = "#" class = "menu-item">Home</a>
-            <a href = "#" class = "menu-item">About</a>
-            <a href = "#" class = "menu-item">Courses</a>
-            <a href = "#" class = "menu-item">Contact</a>
+            <a href = "#home" class = "menu-item">@lang('auth.menu1')</a>
+            <a href = "#about" class = "menu-item">@lang('auth.menu2')</a>
+            <a href = "#courses" class = "menu-item">@lang('auth.menu3')</a>
+            <a href = "#contact" class = "menu-item">@lang('auth.menu4')</a>
         </div>
 
         <div class = "header-btn-wrapper">
@@ -108,16 +108,16 @@
     </div>
 </section>
 
-<section class = "hero-banner-section owl-carousel">
+<section class = "hero-banner-section owl-carousel" id="home">
     <div class = "banner-item">
         <img src="{{ asset('images/hero-1.png') }}" alt="Logo">
         <div class = "banner-overlay"></div>
         <div class = "container">
             <h1 class="text-white">
-                Learn<br> Translate Excel
+                @lang('auth.slider-title-1')
             </h1>
             <h4 class="text-white">
-                Empower Your German Language Journey with FRÖBEL
+                @lang('auth.slider-text-1')
             </h4>
         </div>
     </div>
@@ -126,10 +126,10 @@
         <div class = "banner-overlay"></div>
         <div class = "container">
             <h1 class="text-white">
-                Learn<br> Translate Excel
+                @lang('auth.slider-title-2')
             </h1>
             <h4 class="text-white">
-                Empower Your German Language Journey with FRÖBEL
+                @lang('auth.slider-text-2')
             </h4>
         </div>
     </div>
@@ -138,10 +138,10 @@
         <div class = "banner-overlay"></div>
         <div class = "container">
             <h1 class="text-white">
-                Learn<br> Translate Excel
+                @lang('auth.slider-title-3')
             </h1>
             <h4 class="text-white">
-                Empower Your German Language Journey with FRÖBEL
+                @lang('auth.slider-text-3')
             </h4>
         </div>
     </div>
@@ -153,59 +153,56 @@
 
 <section class = "main-navigator-section section-padding">
     <div class = "container">
-        <a class = "main-navigator__item">
+        <a class = "main-navigator__item" href = "#courses">
             <div class = "main-navigator__item-icon-wrapper">
                 <img src="{{ asset('images/icons/courses.svg') }}" alt="Logo">
             </div>
             <div class = "main-navigator__item-text-wrapper">
-                <h3 class="text-white"> Courses </h3>
-                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices, justo
-                    eget consectetur commodo, velit libero </p>
+                <h3 class="text-white"> @lang('auth.nav-title-1') </h3>
+                <p class="text-white"> @lang('auth.nav-text-1') </p>
             </div>
         </a>
 
-        <a class = "main-navigator__item">
+        <a class = "main-navigator__item" href = "#staff">
             <div class = "main-navigator__item-icon-wrapper">
-                <img src="{{ asset('images/icons/courses.svg') }}" alt="Logo">
+                <img src="{{ asset('images/icons/staff.svg') }}" alt="Logo">
             </div>
             <div class = "main-navigator__item-text-wrapper">
-                <h3 class="text-white"> Courses </h3>
-                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices, justo
-                    eget consectetur commodo, velit libero </p>
+                <h3 class="text-white"> @lang('auth.nav-title-2') </h3>
+                <p class="text-white"> @lang('auth.nav-text-2') </p>
             </div>
         </a>
 
-        <a class = "main-navigator__item">
+        <a class = "main-navigator__item" href = "#contact">
             <div class = "main-navigator__item-icon-wrapper">
-                <img src="{{ asset('images/icons/courses.svg') }}" alt="Logo">
+                <img src="{{ asset('images/icons/contact.svg') }}" alt="Logo">
             </div>
             <div class = "main-navigator__item-text-wrapper">
-                <h3 class="text-white"> Courses </h3>
-                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices, justo
-                    eget consectetur commodo, velit libero </p>
+                <h3 class="text-white"> @lang('auth.nav-title-3') </h3>
+                <p class="text-white"> @lang('auth.nav-text-3') </p>
             </div>
         </a>
     </div>
 </section>
 
-<section class = "section-with-bg about-us-section">
+<section class = "section-with-bg about-us-section" id = "about">
     <div class="container description-wrapper">
         <div class = "description__text-container">
             <div class = "header-with-underline">
-                <h2 class = "text-secondary">About Us</h2>
+                <h2 class = "text-secondary">@lang('auth.about-title')</h2>
                 <div class = "underline-bar"></div>
             </div>
             <p class = "text-black">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices, justo eget consectetur
-                commodo, velit libero consequat justo, sed tristique eros lacus non turpis. Nullam eget magna at odio
-                sollicitudin eleifend. Integer nec mauris id urna fringilla condimentum. Phasellus lacinia mauris id
-                sapien pulvinar, sed fermentum lorem interdum. Cras vel justo vitae neque efficitur accumsan. Proin eget
-                convallis justo, sit amet fringilla.
+                @lang('auth.about-text-1')
+            </p>
+
+            <p class = "text-black">
+                @lang('auth.about-text-2')
             </p>
 
         </div>
         <div class = "description__img-container">
-            <img src="{{ asset('images/hero-1.png') }}" alt="Logo">
+            <img src="{{ asset('images/random-2.png') }}" alt="Logo">
         </div>
     </div>
 </section>
@@ -217,9 +214,8 @@
                 <img src="{{ asset('images/icons/courses.svg') }}" alt="Logo">
             </div>
             <div class = "main-navigator__item-text-wrapper">
-                <h3 class="text-white"> Vision </h3>
-                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices, justo
-                    eget consectetur commodo, velit libero </p>
+                <h3 class="text-white"> @lang('auth.vision-title') </h3>
+                <p class="text-white">@lang('auth.vision-text')</p>
             </div>
         </div>
         <div class = "main-navigator__item">
@@ -227,57 +223,52 @@
                 <img src="{{ asset('images/icons/courses.svg') }}" alt="Logo">
             </div>
             <div class = "main-navigator__item-text-wrapper">
-                <h3 class="text-white"> Vision </h3>
-                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices, justo
-                    eget consectetur commodo, velit libero </p>
+                <h3 class="text-white"> @lang('auth.mission-title') </h3>
+                <p class="text-white">@lang('auth.mission-text') </p>
             </div>
         </div>
     </div>
 </section>
 
-<section class = "section-with-bg section-padding">
+<section class = "section-with-bg section-padding" id = "staff">
     <div class = "container ">
         <div class = "grid-two-col">
             <div class = "header-with-underline">
-                <h2 class = "text-secondary">Our Talented Staff</h2>
+                <h2 class = "text-secondary">@lang('auth.staff-title')</h2>
                 <div class = "underline-bar"></div>
             </div>
             <p class = "text-black">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices, justo eget consectetur
-                commodo, velit libero consequat justo, sed tristique eros lacus non turpis. Nullam eget magna at odio
-                sollicitudin eleifend. Integer nec mauris id urna fringilla condimentum. Phasellus lacinia mauris id
-                sapien pulvinar, sed fermentum lorem interdum. Cras vel justo vitae neque efficitur accumsan. Proin eget
-                convallis justo, sit amet fringilla.
+                @lang('auth.staff-text')
             </p>
         </div>
 
         <div class = "three-col-cards-wrapper">
             <div class = "three-col-item ">
                 <div class = "three-col-item__img-wrapper">
-                    <img src="{{ asset('images/hero-1.png') }}" alt="Logo">
+                    <img src="{{ asset('images/staff-1.png') }}" alt="Logo">
                 </div>
                 <div class = "three-col-item__text-wrapper bg-light">
-                    <h4 class = "text-primary">Service #1</h4>
+                    <h4 class = "text-primary">Memeber 1</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices, justo eget consectetur
                         commodo, velit libero consequat justo, sed tristique </p>
                 </div>
             </div>
             <div class = "three-col-item">
                 <div class = "three-col-item__img-wrapper">
-                    <img src="{{ asset('images/hero-1.png') }}" alt="Logo">
+                    <img src="{{ asset('images/staff-1.png') }}" alt="Logo">
                 </div>
                 <div class = "three-col-item__text-wrapper bg-light">
-                    <h4 class = "text-primary">Service #1</h4>
+                    <h4 class = "text-primary">Memeber 2</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices, justo eget consectetur
                         commodo, velit libero consequat justo, sed tristique </p>
                 </div>
             </div>
             <div class = "three-col-item">
                 <div class = "three-col-item__img-wrapper">
-                    <img src="{{ asset('images/hero-1.png') }}" alt="Logo">
+                    <img src="{{ asset('images/staff-1.png') }}" alt="Logo">
                 </div>
                 <div class = "three-col-item__text-wrapper bg-light">
-                    <h4 class = "text-primary">Service #1</h4>
+                    <h4 class = "text-primary">Memeber 3</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices, justo eget consectetur
                         commodo, velit libero consequat justo, sed tristique </p>
                 </div>
@@ -286,28 +277,24 @@
     </div>
 </section>
 
-<section class = "bg-light section-padding">
+<section class = "bg-light section-padding" id = "courses">
     <div class = "container ">
         <div class = "grid-two-col">
             <div class = "header-with-underline">
-                <h2 class = "text-secondary">Explore <br>
-                    Our Comprehensive <br>
-                    Range of Courses</h2>
+                <h2 class = "text-secondary">
+                    @lang('auth.courses-title')
+                </h2>
                 <div class = "underline-bar"></div>
             </div>
             <p class = "text-black">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices, justo eget consectetur
-                commodo, velit libero consequat justo, sed tristique eros lacus non turpis. Nullam eget magna at odio
-                sollicitudin eleifend. Integer nec mauris id urna fringilla condimentum. Phasellus lacinia mauris id
-                sapien pulvinar, sed fermentum lorem interdum. Cras vel justo vitae neque efficitur accumsan. Proin eget
-                convallis justo, sit amet fringilla.
+                @lang('auth.courses-text')
             </p>
         </div>
 
         <div class = "three-col-cards-wrapper">
             <div class = "three-col-item ">
                 <div class = "three-col-item__img-wrapper">
-                    <img src="{{ asset('images/hero-1.png') }}" alt="Logo">
+                    <img src="{{ asset('images/random-1.png') }}" alt="Logo">
                 </div>
                 <div class = "three-col-item__text-wrapper bg-white">
                     <h4 class = "text-primary">Service #1</h4>
@@ -317,7 +304,7 @@
             </div>
             <div class = "three-col-item">
                 <div class = "three-col-item__img-wrapper">
-                    <img src="{{ asset('images/hero-1.png') }}" alt="Logo">
+                    <img src="{{ asset('images/random-2.png') }}" alt="Logo">
                 </div>
                 <div class = "three-col-item__text-wrapper bg-white">
                     <h4 class = "text-primary">Service #1</h4>
@@ -327,7 +314,7 @@
             </div>
             <div class = "three-col-item">
                 <div class = "three-col-item__img-wrapper">
-                    <img src="{{ asset('images/hero-1.png') }}" alt="Logo">
+                    <img src="{{ asset('images/random-3.png') }}" alt="Logo">
                 </div>
                 <div class = "three-col-item__text-wrapper bg-white">
                     <h4 class = "text-primary">Service #1</h4>
@@ -343,7 +330,7 @@
     <div class = "container">
         <div class = "header-with-underline">
             <h2 class = "text-secondary">
-                Student Testimonials
+                @lang('auth.testimonial-title')
             </h2>
             <div class = "underline-bar"></div>
         </div>
@@ -396,6 +383,78 @@
     </div>
 </section>
 
+<section class = "section-padding bg-light" id = "contact">
+    <div class = "container">
+        <div class = "grid-two-col">
+            <div class = "header-with-underline">
+                <h2 class = "text-secondary">
+                    @lang('auth.contact-title')
+                </h2>
+                <div class = "underline-bar"></div>
+            </div>
+            <p class = "text-black">
+                @lang('auth.contact-text')
+            </p>
+        </div>
+        <div class = "form-wrapper">
+            <form method="POST" action="contactForm" class="margin-default">
+                @csrf
+    
+                <div class="">
+                    <div class="grid-two-col">
+    
+                        <div>
+                            
+                            <div class="input-with-placeholder">
+                                <input type="text" id="first_name" name="first_name" placeholder="@lang('auth.fn-label')"
+                                    class="first_name" required="">
+                                <div class="placeholder-image" style="background-image: url(images/form/name.svg)">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="input-with-placeholder">
+                                <input type="text" id="last_name" name="last_name" placeholder="@lang('auth.ln-label')"
+                                    class="last_name" required="">
+                                <div class="placeholder-image" style="background-image: url(images/form/name.svg)">
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="grid-two-col">
+    
+    
+                        <div>
+                            <div class="input-with-placeholder">
+                                <input type="number" id="contact" name="contact" placeholder="@lang('auth.cn-label')" class="contact"
+                                    required="">
+                                <div class="placeholder-image"
+                                    style="background-image: url(images/form/contact.svg)"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="input-with-placeholder">
+                                <input type="email" id="email" name="email" placeholder="@lang('auth.email-label')" class="email"
+                                    required="">
+                                <div class="placeholder-image" style="background-image: url(images/form/email.svg)">
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div>
+                        <textarea id="message" name="message" placeholder="@lang('auth.msg-label')"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="owl-next">@lang('auth.frm-btn')</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+    
+</section>
+
 <section class = "footer section-padding">
     <div class = "container">
         <div class = "footer-block">
@@ -403,22 +462,22 @@
                 <img src="{{ asset('images/logo-white.png') }}" alt="Logo">
             </div>
             <div class = "footer__links-wrapper">
-                <a class = "footer-link-item">
-                    Home
+                <a class = "footer-link-item" href = "#home">
+                    @lang('auth.menu1')
                 </a>
-                <a class = "footer-link-item">
-                    About
+                <a class = "footer-link-item" href = "#about">
+                    @lang('auth.menu2')
                 </a>
-                <a class = "footer-link-item">
-                    Courses
+                <a class = "footer-link-item" href = "#courses">
+                    @lang('auth.menu3')
                 </a>
-                <a class = "footer-link-item">
-                    Contact
+                <a class = "footer-link-item" href = "#contact">
+                    @lang('auth.menu4')
                 </a>
             </div>
         </div>
         <div class = "footer-block">
-            <div class = "footer__logo-wrapper">
+            <div class = "">
             </div>
             <div class = "footer__address-wrapper">
                 <div class = "footer-address-item">

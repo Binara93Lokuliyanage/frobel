@@ -35,4 +35,43 @@ $(document).ready(function () {
     $('#testimonial-id').text('01');
   });
 
+  $(document).ready(function() {
+    $('.menu-item').on('click', function(e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+        if (target !== '#') {
+            var offsetTop = $(target).offset().top - 100;
+            $('html, body').animate({
+                scrollTop: offsetTop
+            }, 100);
+        }
+    });
+});
+
+$(document).ready(function() {
+  $('.footer-link-item').on('click', function(e) {
+      e.preventDefault();
+      var target = $(this).attr('href');
+      if (target !== '#') {
+          var offsetTop = $(target).offset().top - 100;
+          $('html, body').animate({
+              scrollTop: offsetTop
+          }, 100);
+      }
+  });
+})
+
+$(document).ready(function() {
+  $('.main-navigator__item').on('click', function(e) {
+      e.preventDefault();
+      var target = $(this).attr('href');
+      if (target !== '#') {
+          var offsetTop = $(target).offset().top - 100;
+          $('html, body').animate({
+              scrollTop: offsetTop
+          }, 100);
+      }
+  });
+})
+
  
