@@ -76,5 +76,14 @@ return [
     'cn-label'=>"Contact Number",
     'email-label'=>"Email",
     'msg-label'=>"Message",
-    'frm-btn'=>"Send Message"
+    'frm-btn'=>"Send Message",
+    'testi-1-text'=>"Studying at FRÖBEL Institute has been an incredible experience. The personalized attention from the instructors and the comprehensive curriculum have helped me improve my German language skills significantly. The cultural insights provided in the courses are invaluable and have given me a deeper understanding of the language. I highly recommend FRÖBEL Institute to anyone looking to master a new language.",
+    'testi-1-student'=>"Anna Müller",
+    'testi-2-text'=>"I joined FRÖBEL Institute to enhance my professional language skills and it has exceeded my expectations. The flexibility of online classes and the expertise of the native-speaking teachers made learning so much more effective and enjoyable. The supportive learning environment and tailored courses have allowed me to achieve my language goals with confidence. Thank you, FRÖBEL Institute!",
+    'testi-2-student'=>"Maximilian Schmidt",
+    'testi-3-text'=>"FRÖBEL Institute has truly transformed my language learning journey. The engaging and interactive classes, combined with the experienced instructors, made learning German both fun and efficient. The emphasis on practical communication skills and real-world application has been particularly beneficial. I feel much more confident speaking and understanding German now. FRÖBEL Institute is the best choice for anyone serious about language learning.",
+    'testi-3-student'=>"Emily Johnson",
+    'privacy-policy'=>"Privacy Policy",
+    'terms'=>"Terms and Conditions",
+    
 ];

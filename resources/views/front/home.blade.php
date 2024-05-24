@@ -404,28 +404,28 @@
                 <div class = "testimonial-item">
                     <img src="{{ asset('images/quotes.png') }}" alt="Logo">
                     <p class = "text-secondary">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices, justo eget consectetur commodo, velit libero consequat justo, sed tristique eros lacus non turpis. Nullam eget magna at odio sollicitudin eleifend. Integer nec mauris id urna fringilla condimentum. Phasellus lacinia mauris id sapien pulvinar, sed fermentum lorem interdum. Cras vel justo vitae neque efficitur accumsan. Proin eget convallis justo, sit amet fringilla.
+                        @lang('auth.testi-1-text')
                     </p>
                     <h4 class = "text-secondary">
-                        Student Name
+                        @lang('auth.testi-1-student')
                     </h4>
                 </div>
                 <div class = "testimonial-item">
                     <img src="{{ asset('images/quotes.png') }}" alt="Logo">
                     <p class = "text-secondary">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices, justo eget consectetur commodo, velit libero consequat justo, sed tristique eros lacus non turpis. Nullam eget magna at odio sollicitudin eleifend. Integer nec mauris id urna fringilla condimentum. Phasellus lacinia mauris id sapien pulvinar, sed fermentum lorem interdum. Cras vel justo vitae neque efficitur accumsan. Proin eget convallis justo, sit amet fringilla.
+                        @lang('auth.testi-2-text')
                     </p>
                     <h4 class = "text-secondary">
-                        Student Name
+                        @lang('auth.testi-2-student')
                     </h4>
                 </div>
                 <div class = "testimonial-item">
                     <img src="{{ asset('images/quotes.png') }}" alt="Logo">
                     <p class = "text-secondary">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices, justo eget consectetur commodo, velit libero consequat justo, sed tristique eros lacus non turpis. Nullam eget magna at odio sollicitudin eleifend. Integer nec mauris id urna fringilla condimentum. Phasellus lacinia mauris id sapien pulvinar, sed fermentum lorem interdum. Cras vel justo vitae neque efficitur accumsan. Proin eget convallis justo, sit amet fringilla.
+                        @lang('auth.testi-3-text')
                     </p>
                     <h4 class = "text-secondary">
-                        Student Name
+                        @lang('auth.testi-3-student')
                     </h4>
                 </div>
             </div>
@@ -561,10 +561,10 @@
         <div class = "footer-block social-block">
             <div class = "footer__links-wrapper">
                 <a class = "footer-link-item">
-                    Privacy Policy
+                    @lang('auth.privacy-policy')
                 </a>
                 <a class = "footer-link-item">
-                    Terms & Conditions
+                    @lang('auth.terms')
                 </a>
             </div>
                 <div class = "footer-social-wrapper">

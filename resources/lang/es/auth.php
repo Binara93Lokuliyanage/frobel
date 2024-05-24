@@ -76,6 +76,17 @@ return [
     'cn-label' => "Número de Contacto",
     'email-label' => "Correo Electrónico",
     'msg-label' => "Mensaje",
-    'frm-btn' => "Enviar Mensaje"
+    'frm-btn' => "Enviar Mensaje",
+    'testi-1-text' => "Estudiar en el Instituto FRÖBEL ha sido una experiencia increíble. La atención personalizada de los instructores y el plan de estudios integral me han ayudado a mejorar significativamente mis habilidades en el idioma alemán. Los conocimientos culturales proporcionados en los cursos son invaluables y me han dado una comprensión más profunda del idioma. Recomiendo el Instituto FRÖBEL a cualquiera que quiera dominar un nuevo idioma.",
+    'testi-1-student' => "Anna Müller",
+    
+    'testi-2-text' => "Me uní al Instituto FRÖBEL para mejorar mis habilidades lingüísticas profesionales y ha superado mis expectativas. La flexibilidad de las clases en línea y la experiencia de los profesores nativos hicieron que el aprendizaje fuera mucho más efectivo y agradable. El entorno de aprendizaje de apoyo y los cursos personalizados me han permitido alcanzar mis objetivos lingüísticos con confianza. ¡Gracias, Instituto FRÖBEL!",
+    'testi-2-student' => "Maximilian Schmidt",
+    
+    'testi-3-text' => "El Instituto FRÖBEL ha transformado realmente mi viaje de aprendizaje de idiomas. Las clases atractivas e interactivas, combinadas con los instructores experimentados, hicieron que aprender alemán fuera divertido y eficiente. El énfasis en las habilidades de comunicación práctica y su aplicación en el mundo real ha sido particularmente beneficioso. Ahora me siento mucho más seguro al hablar y comprender el alemán. El Instituto FRÖBEL es la mejor opción para cualquiera que se tome en serio el aprendizaje de un idioma.",
+    'testi-3-student' => "Emily Johnson",
+    
+    'privacy-policy' => "Política de Privacidad",
+    'terms' => "Términos y Condiciones",
 
 ];

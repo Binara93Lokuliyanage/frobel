@@ -76,5 +76,16 @@ return [
     'cn-label' => "Telefonnummer",
     'email-label' => "E-Mail",
     'msg-label' => "Nachricht",
-    'frm-btn' => "Nachricht senden"
+    'frm-btn' => "Nachricht senden",
+    'testi-1-text' => "Das Studium am FRÖBEL-Institut war eine unglaubliche Erfahrung. Die persönliche Betreuung durch die Lehrkräfte und das umfassende Curriculum haben mir geholfen, meine Deutschkenntnisse erheblich zu verbessern. Die kulturellen Einblicke, die in den Kursen vermittelt werden, sind von unschätzbarem Wert und haben mir ein tieferes Verständnis der Sprache gegeben. Ich kann das FRÖBEL-Institut jedem empfehlen, der eine neue Sprache meistern möchte.",
+    'testi-1-student' => "Anna Müller",
+    
+    'testi-2-text' => "Ich habe mich dem FRÖBEL-Institut angeschlossen, um meine beruflichen Sprachkenntnisse zu verbessern, und es hat meine Erwartungen übertroffen. Die Flexibilität der Online-Kurse und die Expertise der muttersprachlichen Lehrer machten das Lernen viel effektiver und angenehmer. Die unterstützende Lernumgebung und die maßgeschneiderten Kurse haben es mir ermöglicht, meine Sprachziele mit Zuversicht zu erreichen. Vielen Dank, FRÖBEL-Institut!",
+    'testi-2-student' => "Maximilian Schmidt",
+    
+    'testi-3-text' => "Das FRÖBEL-Institut hat meine Sprachlernreise wirklich verändert. Die ansprechenden und interaktiven Klassen, kombiniert mit den erfahrenen Lehrkräften, machten das Deutschlernen sowohl unterhaltsam als auch effizient. Der Schwerpunkt auf praktischen Kommunikationsfähigkeiten und deren Anwendung in der realen Welt war besonders vorteilhaft. Ich fühle mich jetzt viel sicherer im Sprechen und Verstehen der deutschen Sprache. Das FRÖBEL-Institut ist die beste Wahl für alle, die ernsthaft eine Sprache lernen möchten.",
+    'testi-3-student' => "Emily Johnson",
+    
+    'privacy-policy' => "Datenschutzrichtlinie",
+    'terms' => "Geschäftsbedingungen",
 ];
