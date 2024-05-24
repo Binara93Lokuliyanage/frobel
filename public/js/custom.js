@@ -84,6 +84,10 @@ $(document).ready(function() {
     $('.mobile-menu-content-wrapper').removeClass('content-active ');
 });
 
+$('.popup-close').click(function() {
+  $('.success-popup-wrapper').removeClass('success-popup-active');
+});
+
 });
 
  

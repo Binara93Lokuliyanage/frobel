@@ -88,4 +88,8 @@ return [
     
     'privacy-policy' => "隐私政策",
     'terms' => "条款和条件",
+
+    'thank-title' => "谢谢!",
+'thank-text' => "您的消息已成功发送。<br>我们会尽快与您联系。",
+
 ];

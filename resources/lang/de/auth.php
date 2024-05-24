@@ -88,4 +88,7 @@ return [
     
     'privacy-policy' => "Datenschutzrichtlinie",
     'terms' => "Geschäftsbedingungen",
+    'thank-title' => "DANKE!",
+'thank-text' => "Ihre Nachricht wurde erfolgreich gesendet. <br>Wir werden uns bald bei Ihnen melden.",
+
 ];

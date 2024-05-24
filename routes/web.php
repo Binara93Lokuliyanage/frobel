@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ContactMailController;
+use App\Mail\ContactEmail;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,3 +25,4 @@ Route::group(['prefix'=>'{locale}'], function() {
     })->middleware('setLocale');
 });
 
+Route::post('/contactForm', [ContactMailController::class,'contactEmail']);

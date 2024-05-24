@@ -1,5 +1,28 @@
 @extends('front.layouts.app')
 
+@if(Session::has('success'))
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the element with the class 'success-popup-wrapper'
+            var successPopupWrapper = document.querySelector('.success-popup-wrapper');
+
+            // Check if the element exists
+            if (successPopupWrapper) {
+                // Add the class 'success-popup-active'
+                successPopupWrapper.classList.add('success-popup-active');
+            }
+        });
+    </script>
+@endif
+
+<div class = "success-popup-wrapper" id = "success-popup">
+    <div class = "success-popup">
+        <div class = "popup-close" id ="popup-close"><strong>X</strong></div>
+        <h3 class = "text-secondary">@lang('auth.thank-title')</h3>
+        <p>@lang('auth.thank-text')</p>
+    </div>
+</div>
+
 <section class = "header-section">
     <div class = "container header-container">
         <div class  = "logo-wrapper">
@@ -111,9 +134,9 @@
     </div>
     <div class = "mobile-menu-content-wrapper ">
         <a href = "#home" class = "mobile-menu menu-item h4">@lang('auth.menu1')</a>
-            <a href = "#about" class = "mobile-menu menu-item h4">@lang('auth.menu2')</a>
-            <a href = "#courses" class = "mobile-menu menu-item h4">@lang('auth.menu3')</a>
-            <a href = "#contact" class = "mobile-menu menu-item h4">@lang('auth.menu4')</a>
+        <a href = "#about" class = "mobile-menu menu-item h4">@lang('auth.menu2')</a>
+        <a href = "#courses" class = "mobile-menu menu-item h4">@lang('auth.menu3')</a>
+        <a href = "#contact" class = "mobile-menu menu-item h4">@lang('auth.menu4')</a>
     </div>
 </section>
 
@@ -213,7 +236,7 @@
                 @lang('auth.about-text-1')
             </p>
 
-           
+
 
         </div>
         <div class = "description__img-container">
@@ -252,7 +275,7 @@
             </div>
             <div class = "main-navigator__item">
                 <div class = "main-navigator__item-text-wrapper">
-                    
+
                     <h4 class="text-white"> @lang('auth.about-text-lan-6') </h4>
                 </div>
             </div>
@@ -464,49 +487,49 @@
         <div class = "form-wrapper">
             <form method="POST" action="contactForm" class="margin-default">
                 @csrf
-    
+
                 <div class="">
                     <div class="grid-two-col">
-    
+
                         <div>
-                            
+
                             <div class="input-with-placeholder">
-                                <input type="text" id="first_name" name="first_name" placeholder="@lang('auth.fn-label')"
-                                    class="first_name" required="">
+                                <input type="text" id="first_name" name="first_name"
+                                    placeholder="@lang('auth.fn-label')" class="first_name" required>
                                 <div class="placeholder-image" style="background-image: url(images/form/name.svg)">
                                 </div>
                             </div>
                         </div>
                         <div>
                             <div class="input-with-placeholder">
-                                <input type="text" id="last_name" name="last_name" placeholder="@lang('auth.ln-label')"
-                                    class="last_name" required="">
+                                <input type="text" id="last_name" name="last_name"
+                                    placeholder="@lang('auth.ln-label')" class="last_name" required>
                                 <div class="placeholder-image" style="background-image: url(images/form/name.svg)">
                                 </div>
                             </div>
                         </div>
-    
+
                     </div>
                     <div class="grid-two-col">
-    
-    
+
+
                         <div>
                             <div class="input-with-placeholder">
-                                <input type="number" id="contact" name="contact" placeholder="@lang('auth.cn-label')" class="contact"
-                                    required="">
-                                <div class="placeholder-image"
-                                    style="background-image: url(images/form/contact.svg)"></div>
+                                <input type="number" id="contact" name="contact" placeholder="@lang('auth.cn-label')"
+                                    class="contact" required="">
+                                <div class="placeholder-image" style="background-image: url(images/form/contact.svg)">
+                                </div>
                             </div>
                         </div>
                         <div>
                             <div class="input-with-placeholder">
-                                <input type="email" id="email" name="email" placeholder="@lang('auth.email-label')" class="email"
-                                    required="">
+                                <input type="email" id="email" name="email" placeholder="@lang('auth.email-label')"
+                                    class="email" required>
                                 <div class="placeholder-image" style="background-image: url(images/form/email.svg)">
                                 </div>
                             </div>
                         </div>
-    
+
                     </div>
                     <div>
                         <textarea id="message" name="message" placeholder="@lang('auth.msg-label')"></textarea>
@@ -517,7 +540,7 @@
             </form>
         </div>
     </div>
-    
+
 </section>
 
 <section class = "footer section-padding">
@@ -567,20 +590,20 @@
                     @lang('auth.terms')
                 </a>
             </div>
-                <div class = "footer-social-wrapper">
-                    <a href="mailto:info@institut-fröbel.de" class = "text-white">
-                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                    </a>
-                    <a href="mailto:info@institut-fröbel.de" class = "text-white">
-                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                    </a>
-                    <a href="mailto:info@institut-fröbel.de" class = "text-white">
-                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                    </a>
-                    <a href="mailto:info@institut-fröbel.de" class = "text-white">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                </div>
+            <div class = "footer-social-wrapper">
+                <a href="mailto:info@institut-fröbel.de" class = "text-white">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:info@institut-fröbel.de" class = "text-white">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:info@institut-fröbel.de" class = "text-white">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:info@institut-fröbel.de" class = "text-white">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </div>
         </div>
     </div>
 </section>
@@ -592,7 +615,8 @@
                 <i class="fa fa-copyright" aria-hidden="true"></i>&nbsp;Fröbel Institut
             </div>
             <div>
-                Designed and Developed by <a href = "https://www.fiverr.com/binaralokuliyan" target = "_blank" ><strong>Binara Lokuliyanage</strong></a>
+                Designed and Developed by <a href = "https://www.fiverr.com/binaralokuliyan"
+                    target = "_blank"><strong>Binara Lokuliyanage</strong></a>
             </div>
         </div>
     </div>

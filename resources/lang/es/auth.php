@@ -89,4 +89,8 @@ return [
     'privacy-policy' => "Política de Privacidad",
     'terms' => "Términos y Condiciones",
 
+    'thank-title' => "¡GRACIAS!",
+'thank-text' => "Su mensaje se ha enviado correctamente. <br>Pronto nos pondremos en contacto con usted.",
+
+
 ];

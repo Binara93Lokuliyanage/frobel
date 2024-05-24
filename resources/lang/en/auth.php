@@ -85,5 +85,7 @@ return [
     'testi-3-student'=>"Emily Johnson",
     'privacy-policy'=>"Privacy Policy",
     'terms'=>"Terms and Conditions",
+    'thank-title'=>"THANK YOU !",
+    'thank-text'=>"Your message has been sent successfully. <br>We will contact you soon",
     
 ];
