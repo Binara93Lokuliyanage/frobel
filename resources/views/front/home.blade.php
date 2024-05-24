@@ -103,8 +103,17 @@
         </div>
 
         <div class = "mobile-menu-wrapper">
+            <div class = "mobile-menu-bar"></div>
+            <div class = "mobile-menu-bar"></div>
+            <div class = "mobile-menu-bar"></div>
         </div>
     </div>
+    </div>
+    <div class = "mobile-menu-content-wrapper ">
+        <a href = "#home" class = "mobile-menu menu-item h4">@lang('auth.menu1')</a>
+            <a href = "#about" class = "mobile-menu menu-item h4">@lang('auth.menu2')</a>
+            <a href = "#courses" class = "mobile-menu menu-item h4">@lang('auth.menu3')</a>
+            <a href = "#contact" class = "mobile-menu menu-item h4">@lang('auth.menu4')</a>
     </div>
 </section>
 
@@ -192,17 +201,61 @@
                 <h2 class = "text-secondary">@lang('auth.about-title')</h2>
                 <div class = "underline-bar"></div>
             </div>
+            <h3 class = "text-black">
+                @lang('auth.about-text-h1')
+            </h3>
+
+            <h4 class = "text-black">
+                @lang('auth.about-text-h2')
+            </h4>
+
             <p class = "text-black">
                 @lang('auth.about-text-1')
             </p>
 
-            <p class = "text-black">
-                @lang('auth.about-text-2')
-            </p>
+           
 
         </div>
         <div class = "description__img-container">
             <img src="{{ asset('images/random-2.png') }}" alt="Logo">
+        </div>
+    </div>
+    <div class = "container special" style="margin-top: 3rem">
+        <h4 class = "text-black">
+            @lang('auth.about-text-2')
+        </h4>
+        <div class = "three-col-cards-wrapper">
+            <div class = "main-navigator__item">
+                <div class = "main-navigator__item-text-wrapper">
+                    <h4 class="text-white"> @lang('auth.about-text-lan-1') </h4>
+                </div>
+            </div>
+            <div class = "main-navigator__item">
+                <div class = "main-navigator__item-text-wrapper">
+                    <h4 class="text-white"> @lang('auth.about-text-lan-2') </h4>
+                </div>
+            </div>
+            <div class = "main-navigator__item">
+                <div class = "main-navigator__item-text-wrapper">
+                    <h4 class="text-white"> @lang('auth.about-text-lan-3') </h4>
+                </div>
+            </div>
+            <div class = "main-navigator__item">
+                <div class = "main-navigator__item-text-wrapper">
+                    <h4 class="text-white"> @lang('auth.about-text-lan-4') </h4>
+                </div>
+            </div>
+            <div class = "main-navigator__item">
+                <div class = "main-navigator__item-text-wrapper">
+                    <h4 class="text-white"> @lang('auth.about-text-lan-5') </h4>
+                </div>
+            </div>
+            <div class = "main-navigator__item">
+                <div class = "main-navigator__item-text-wrapper">
+                    
+                    <h4 class="text-white"> @lang('auth.about-text-lan-6') </h4>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -243,34 +296,40 @@
         </div>
 
         <div class = "three-col-cards-wrapper">
-            <div class = "three-col-item ">
+            <div class = "three-col-item bg-light ">
                 <div class = "three-col-item__img-wrapper">
-                    <img src="{{ asset('images/staff-1.png') }}" alt="Logo">
+                    <img src="{{ asset('images/lecturer.png') }}" alt="Logo">
                 </div>
                 <div class = "three-col-item__text-wrapper bg-light">
-                    <h4 class = "text-primary">Memeber 1</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices, justo eget consectetur
-                        commodo, velit libero consequat justo, sed tristique </p>
+                    <h4 class = "text-primary">@lang('auth.staff-item-1-title')</h4>
+                    <p>@lang('auth.staff-item-1-text')</p>
                 </div>
             </div>
-            <div class = "three-col-item">
+            <div class = "three-col-item bg-light">
                 <div class = "three-col-item__img-wrapper">
-                    <img src="{{ asset('images/staff-1.png') }}" alt="Logo">
+                    <img src="{{ asset('images/random-3.png') }}" alt="Logo">
                 </div>
                 <div class = "three-col-item__text-wrapper bg-light">
-                    <h4 class = "text-primary">Memeber 2</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices, justo eget consectetur
-                        commodo, velit libero consequat justo, sed tristique </p>
+                    <h4 class = "text-primary">@lang('auth.staff-item-2-title')</h4>
+                    <p>@lang('auth.staff-item-2-text')</p>
                 </div>
             </div>
-            <div class = "three-col-item">
+            <div class = "three-col-item bg-light">
                 <div class = "three-col-item__img-wrapper">
-                    <img src="{{ asset('images/staff-1.png') }}" alt="Logo">
+                    <img src="{{ asset('images/individual.png') }}" alt="Logo">
                 </div>
                 <div class = "three-col-item__text-wrapper bg-light">
-                    <h4 class = "text-primary">Memeber 3</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices, justo eget consectetur
-                        commodo, velit libero consequat justo, sed tristique </p>
+                    <h4 class = "text-primary">@lang('auth.staff-item-3-title')</h4>
+                    <p>@lang('auth.staff-item-3-text')</p>
+                </div>
+            </div>
+            <div class = "three-col-item bg-light">
+                <div class = "three-col-item__img-wrapper">
+                    <img src="{{ asset('images/cultural.png') }}" alt="Logo">
+                </div>
+                <div class = "three-col-item__text-wrapper bg-light">
+                    <h4 class = "text-primary">@lang('auth.staff-item-4-title')</h4>
+                    <p>@lang('auth.staff-item-4-text')</p>
                 </div>
             </div>
         </div>
@@ -292,34 +351,40 @@
         </div>
 
         <div class = "three-col-cards-wrapper">
-            <div class = "three-col-item ">
+            <div class = "three-col-item bg-white">
                 <div class = "three-col-item__img-wrapper">
-                    <img src="{{ asset('images/random-1.png') }}" alt="Logo">
+                    <img src="{{ asset('images/one-to-one.png') }}" alt="Logo">
                 </div>
                 <div class = "three-col-item__text-wrapper bg-white">
-                    <h4 class = "text-primary">Service #1</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices, justo eget consectetur
-                        commodo, velit libero consequat justo, sed tristique </p>
+                    <h4 class = "text-primary">@lang('auth.course-item-1-title')</h4>
+                    <p>@lang('auth.course-item-1-text')</p>
                 </div>
             </div>
-            <div class = "three-col-item">
+            <div class = "three-col-item bg-white">
                 <div class = "three-col-item__img-wrapper">
                     <img src="{{ asset('images/random-2.png') }}" alt="Logo">
                 </div>
                 <div class = "three-col-item__text-wrapper bg-white">
-                    <h4 class = "text-primary">Service #1</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices, justo eget consectetur
-                        commodo, velit libero consequat justo, sed tristique </p>
+                    <h4 class = "text-primary">@lang('auth.course-item-2-title')</h4>
+                    <p>@lang('auth.course-item-2-text')</p>
                 </div>
             </div>
-            <div class = "three-col-item">
+            <div class = "three-col-item bg-white">
                 <div class = "three-col-item__img-wrapper">
-                    <img src="{{ asset('images/random-3.png') }}" alt="Logo">
+                    <img src="{{ asset('images/intensive.png') }}" alt="Logo">
                 </div>
                 <div class = "three-col-item__text-wrapper bg-white">
-                    <h4 class = "text-primary">Service #1</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices, justo eget consectetur
-                        commodo, velit libero consequat justo, sed tristique </p>
+                    <h4 class = "text-primary">@lang('auth.course-item-3-title')</h4>
+                    <p>@lang('auth.course-item-3-text')</p>
+                </div>
+            </div>
+            <div class = "three-col-item bg-white">
+                <div class = "three-col-item__img-wrapper">
+                    <img src="{{ asset('images/company.png') }}" alt="Logo">
+                </div>
+                <div class = "three-col-item__text-wrapper bg-white">
+                    <h4 class = "text-primary">@lang('auth.course-item-4-title')</h4>
+                    <p>@lang('auth.course-item-4-text')</p>
                 </div>
             </div>
         </div>

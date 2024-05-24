@@ -77,6 +77,13 @@ p {
   margin: 0;
 }
 
+ul {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
 .grid-two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -184,12 +191,59 @@ a {
   display: none;
   width: 30px;
   height: 30px;
-  background-color: #000000;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 660px) {
   .mobile-menu-wrapper {
-    display: block;
+    display: flex;
   }
+}
+
+.mobile-menu-bar {
+  width: 100%;
+  height: 2px;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-active .mobile-menu-bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.mobile-menu-active .mobile-menu-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-active .mobile-menu-bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+
+.mobile-menu-content-wrapper {
+  background-color: var(--white);
+  position: fixed;
+  z-index: 10;
+  top: 96px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mobile-menu-content-wrapper a:first-child {
+  margin-top: 3rem;
+}
+
+.content-active {
+  height: 100vh;
 }
 
 .menu-item {
@@ -483,9 +537,22 @@ a {
   background-color: var(--secondary-color);
 }
 
+.special .main-navigator__item {
+  grid-template-columns: 1fr;
+}
+
+.special .three-col-cards-wrapper {
+  grid-template-columns: repeat(3, 1fr);
+}
+@media screen and (max-width: 660px) {
+  .special .three-col-cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
 .three-col-cards-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin-top: 3rem;
 }
@@ -509,6 +576,7 @@ a {
 .three-col-item:hover {
   transform: scale(1.02);
   border-radius: 0;
+  background-color: var(--primary-color);
 }
 
 .three-col-item:hover p,
